@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="mystyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+</head>
+<body>
+    
+    <div class="banner" id="home">
+
+        <div class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#myinfo"> MY INFO </a></li>    
+                <li><a href="#myskills"> MY SKILLS </a></li>    
+                <li><a href="#myexperiences"> MY EXPERIENCES </a></li>    
+                <li><a href="#mygallery"> MY GALLERY </a></li>    
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <h1> My Portfolio </h1>
+            <p>  Feel free to find out more about me </p>
+
+
+            <div class="buttons">
+                <button type="button"><span></span> READ MORE </button>
+                <button type="button"><span></span> WATCH MORE </button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<!-- MY INFO -->
+
+<div class="about-section" id="myinfo">
+    <div class="heading">
+        <h1> MY INFO </h1>
+        <p> This page contains about MYSELF</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/mepic.jpg">
+            </div>
+            <div class="about-content">
+            <h2> Hi I'm Jemima G. Mariano </h2>
+            <p>Hi! I simply want you to know that I'm a person who is optimistic.
+               I am a 3rd year College, studying major in Programming at PHINMA University of Iloilo. One day, I aim to be a Software Engineer. I'm really enthusiastic about my programming abilities, and I'm continuously seeking for new methods to learn
+               and develop.</p>
+
+            <a href="#" class="read-more"> Read More </a>
+
+        </div>
+    </section>
+</div>
+</div>
+
+</body>
+</html>
+
+
+<!--MY SKILLS--->
+
+  <div class="testimonials" id="myskills">
+    <div class="testimonial-inner">
+      <h1> MY SKILLS </h1>
+      <div class="border"></div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/skill1.gif" alt="">
+            <div class="name"> Time Management </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Time management is vital for my success in order to have a decent work, thus it is one of my abilities. Demonstrating strong time management abilities demonstrates to them that I can keep on top of responsibilities, meet deadlines, and operate in an efficient and productive manner. </p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/skill2.gif" alt="">
+            <div class="name"> Teamwork </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>Teamwork is one of my strengths. This is the most critical to apply to yourself since having a collaborative problem solver results in better solutions. Working as part of a team promotes personal development, boosts job satisfaction, and decreases stress. </p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/skill3.gif" alt="">
+            <div class="name"> Attention to detail </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>This skill is also crucial, therefore it's something I'm getting used to. The capacity to focus on all aspects of a job or work, no matter how little, is referred to as attention to detail. I need to be skilled at detail so that I may have a good output since a minor detail can result in a significant development of your work. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--MY EXPERIENCES-->
+
+<div class="blog-section" id="myexperiences">
+
+        <div class="section-content">
+
+            <div class="title">
+                <h2> MY EXPERIENCES </h2>
+            </div>
+            <div class="cards">
+                <div class = "card">
+
+                <div class="image-section">
+                    <img src="img/expe1.jpg">
+            </div>
+
+
+
+            <div class="article">
+                <h4> STACK LEAGUE: CELESTIAL GOLD RUSH </h4>
+                <p> I took grasp of a wonderful chance. This event is for programmers who wish to lead us or streamline our scores for any challenge that can be solved by code, a code that will run it with the intended outcome.
+                </p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More</a>
+            </div>
+
+            <div class="posted-date">
+                <p> Date Posted: July 01, 2023 </p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="image-section">
+                <img src="img/expe2.jpeg">
+            </div>
+
+
+            <div class="article">
+                <h4> JOINING STUDENT COUNCIL </h4>
+                <p>This is my first time serving on the student council. I am the secretary of the Local CITE Council. As a result of this, I am able to lead our department and aim to accomplish something positive for the benefit and pleasure of our department. </p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More </a>
+            </div>
+
+            <div class="posted-date">
+                <p> Date Posted: March 21, 2023 </p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="image-section">
+                <img src="img/expe3.jpeg">
+            </div>
+
+
+            <div class="article">
+                <h4> Part Time: Moulding Installation, Cable Pulling, and Crimping </h4>
+                <p>This part-time opportunity was provided by one of our professors who teaches networking. By achieving this, we want to be able to use what we study in this area at work. Our work was great since we worked well and polished it.</p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More </a>
+            </div>
+            
+            <div class="posted-date">
+                <p> Date Posted: February 24, 2023</p>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--MY GALLERY--->
+
+
+  <div class="gallery" id="mygallery">
+
+    <input type="radio" name="photos" id="check1" checked> 
+
+<div class="gallery-container"> 
+     <h1> GALLERY </h1>
+    <div class="top-content">
+        <h3> Photo Gallery </h3>
+    </div>
+
+<div class="photo-gallery">
+
+    <div class="pic one"> 
+        <img src="img/one.jpg">
+    </div>
+
+    <div class="pic two"> 
+        <img src="img/two.jpg"> 
+    </div>
+
+    <div class="pic three">
+        <img src="img/three.jpg"> 
+    </div>
+
+    <div class="pic four"> 
+        <img src="img/four.jpg"> 
+    </div>
+
+
+    <div class="pic five"> 
+        <img src="img/five.jpg"> 
+    </div>
+
+
+    <div class="pic six">
+        <img src="img/six.jpg"> 
+    </div>
+
+    <div class="pic seven">
+        <img src="img/seven.jpg">
+    </div>
+
+    <div class="pic eight"> 
+        <img src="img/eight.jpeg"> 
+    </div>
+
+    <div class="pic nine">
+        <img src="img/nine.jpeg">
+    </div>
+
+    <div class="pic ten">
+        <img src="img/ten.jpeg">
+    </div>
+
+    <div class="pic eleven">
+        <img src="img/eleven.jpeg"> 
+    </div>
+
+    <div class="pic twelve">
+        <img src="img/twelve.jpeg">
+    </div>
+</div>
+</div>
+</div>
+
+
+<!--MY FOOTER-->
+
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="copyright"> Manage and Created by Mima @2023</p>
+    </footer>
+</div>
+
+    </body>
+    </html>
